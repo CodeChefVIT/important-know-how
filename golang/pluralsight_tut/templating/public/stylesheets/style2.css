@@ -1,0 +1,194 @@
+body{
+    background-image: url("../images/bg1.jpg");
+    max-width: 100% !important;
+    height: 100%;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.yellowBG{
+    color: yellow !important;
+}
+
+/*BAKER*/
+.slotLabel:hover{
+    font-weight: bold;
+    cursor:pointer;
+}
+.testSlot{
+    background: linear-gradient(rgba(142, 43, 255, 0.5), rgba(12, 43, 238, 0.63))!important;
+    transition: 0.8s;
+}
+.textBold{
+    font-weight: bold;
+}
+.row1{
+    height:70px !important;
+}
+.week{
+    width:100px; !important;
+    padding:1px !important;
+}
+.l{
+    width: 70px;
+}
+.FFCStable{
+    table-layout: fixed;
+}
+/*Baker ends*/
+
+
+.brand-logo{
+    margin-left:5vh !important;
+    color:black !important;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+
+.m{
+    font-size: 3vh !important;
+    color:black !important;
+    margin-right: 5vh;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+nav{
+    background-color: rgba(0,0,0,0.1)!important;
+}
+
+.c1{
+    margin-top: 50px;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+/*change*/
+.cross {
+    color: red;
+}
+
+.close:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.fac:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+/*change*/
+
+
+.slotTable{
+    background-color: rgba(242,242,242,0.8) !important;
+    text-align: center!important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.FFCStable, .row1, .slotHead, .slot{
+    background-color: rgba(242,242,242,0.4) !important;
+    text-align: center!important;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding:2px !important;
+
+    size: 4px!important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.TH{
+    background: linear-gradient(rgba(255, 163, 42, 0.5), rgba(238, 42, 104, 0.63))!important;
+    color:black;
+}
+.LAB{
+    background: linear-gradient(rgba(73, 89, 255, 0.5), rgba(57, 239, 71, 0.84))!important;
+    color:black;
+}
+.FFCStable{
+    max-width: 90%;
+
+}
+/*.A1{*/
+    /*background-color: yellow !important;*/
+/*}*/
+
+
+.slotTable, .slot{
+
+}
+.selectedCourse{
+    width:85%;
+    background-color: rgba(242,242,242,0.8) !important;
+    text-align: center!important;
+    font-size: 2.5vh !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+#text1{
+    font-size: 3vh !important;
+    margin-left: 15vh;
+}
+#text2{
+    font-size: 2.8vh !important;
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+td,th
+{
+    text-align: center!important;
+}
+#title, #fac{
+    font-size: 3vh !important;
+    color:black !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.font1{
+    font-family: 'Alegreya Sans', sans-serif !important;
+}
+
+.BFac{
+    width:60% !important;
+    background: linear-gradient( to left, #1429ff, deeppink) !important;
+    opacity:0.8 !important;
+}
+.BFac:hover{
+    color: black; !important;
+}
+
+/*CSS FOR SWITCH*/
+/* The switch - the box around the slider */
+
+.switch label input[type=checkbox] +.lever {
+    font-size: 4vh !important;
+    background: linear-gradient( to left,  yellow, deeppink) !important;
+    opacity: 0.8;
+
+}
+
+.switch label input[type=checkbox] +.lever:after {
+    background-color: rgba(132,132,191) !important;
+}
+#sw1{
+    border-left: none;
+    border-right: none;
+    border-top:none;
+    border-width: 2px;
+    border-color: black;
+    max-width:70%;
+}
+/*CSS END*/
+#credits{
+    background: linear-gradient( to left,  yellow, deeppink) !important;
+    width:140px;
+    margin-right: 100px;
+    height:140px;
+    border-radius:70px;
+    font-family: 'Montserrat', sans-serif !important;
+    color:white;
+}
+.DataBase{
+    height:30vh;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size:2.5vh;
+    overflow-x: hidden;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FFCS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Ubuntu+Conde nsed" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+
+
+<body>
+<div class="container-fluid c1" id="c1a"><strong>Welcome To myFFCS redefined</strong></div>
+    <div class="container-fluid c1" id="c1b">Create your time-table without a hassle</div>
+    <div class="container-fluid c2" >
+        <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+
+        <form action="/" method="post">
+        <div id="uname">USERNAME<br>
+            <div class="input-group i1">
+                <input type="text" name="email" id="i1" class="form-control f1" >
+            </div><BR>
+        </div>
+        </div>
+        <div class="col-sm-3">
+            <div id="psw">PASSWORD<br>
+                <div class="input-group">
+                    <input type="password"  name = "passwd" id="i2" class="form-control f2" >
+                </div><BR>
+            </div>
+        </div>
+        </div>
+    </div>
+<div class="container-fluid c3" >
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3">
+            <button class="btn" type="submit" id="b1" required="true">LOGIN</button><BR>
+                </form>
+            <a href="/nosignup"><button class="btn" type="button" id="b2" required="true">SKIP LOGIN</button></a><BR>
+            <button class="btn" type="button" id="b3">SIGN UP</button>
+            <button class="btn" type="button" id="b4" >SIGN UP WITH  <i class="fa fa-google-plus" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--MODAL-->
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal1">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" >
+
+                    <h4><span class="glyphicon glyphicon-lock" ></span><strong> SIGN UP</strong></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body" style="padding:40px 50px;">
+                    <form role="form" action="/" method="post">
+
+                        <div class="form-group">
+                            <label for="f1"><b>Email:</b></label>
+                            <input type="email" class="form-control" id="f1"  name="email">
+                        </div>
+                        <br>
+                        <!-- <div class="form-group">
+                            <label for="f2"><b>Full Name</b> </label>
+                            <input type="text" class="form-control" id="f2"  name="email">
+                        </div> -->
+                        <br>
+                        <div class="form-group">
+                            <label for="f2"><b>Password</b> </label>
+                            <input type="password" class="form-control" id="f3"  name="passwd">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="f2"><b>Re-enter Password</b> </label>
+                            <input type="password" class="form-control" id="f4"  name="confirm">
+                        </div>
+
+                        <div class="butn" align="middle"><button type="submit" class="btn B2 btn-block"  value="submit"><span class="glyphicon glyphicon-off"></span> REGISTER ME</button></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#b3").click(function(){
+            $("#myModal").modal();
+        });
+        $("#b4").click(function(){
+            window.location = "/auth/google";
+        })
+        $("#b2").click(function(){
+            window.location = "timetable2.ejs";
+        })
+    });
+
+
+</script>
+</body>
+</html>

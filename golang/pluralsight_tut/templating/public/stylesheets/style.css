@@ -1,0 +1,100 @@
+body{
+	background-image: url("../images/bg1.jpg");
+	max-width: 100% !important;
+	height: 100%;
+	background-size: cover ;
+	background-repeat: no-repeat;
+
+
+}
+.c1{
+	padding-left:10vh;
+	margin-left: 23vh;
+}
+#c1a{
+	margin-top: 10vh;
+	font-size: 52px;
+}
+#c1b{
+	font-size: 30px;
+}
+#i1,#i2{
+	margin-top: 20px;
+	border-left: none;
+	border-right: none;
+	border-top:none;
+	border-width: 2px;
+	border-color: black;
+	max-width:70%;
+}
+.c2{
+	margin-top: 10vh;
+	font-size: 28px;
+ }
+.modal-header{
+	background: linear-gradient( to left,  #fecf32, #ee526c);
+
+}
+.B2{
+	background: linear-gradient( to left,  #2848be, #954ced);
+}
+/*Media Queries for a Responsive Website*/
+#b1, #b2, #b3,#b4{
+	font-family: 'Montserrat', sans-serif;
+	margin: 12px;
+	width:200px;
+	color: white;
+}
+#uname,#psw{
+	font-family: 'Montserrat', sans-serif;
+}
+#b1{
+	background: linear-gradient( to left,  #2848be, #954ced);
+}
+#b3{
+	background: linear-gradient( to left,  yellow, deeppink);
+}
+#b2{
+	background: linear-gradient( to left,  #fecf32, #ee526c);
+}
+#b4{
+	background: linear-gradient( to left, #f7fe1f, #ee2a68);
+}
+
+#b1:hover, #b2:hover, #b3:hover, #b4:hover{
+	cursor:pointer;
+	color:black;
+}
+
+@media (max-width: 885px)
+{
+	.c1{
+		padding-left:5vh;
+		margin-left: 13vh;
+	}
+	#c1a{
+		margin-top: 5vh;
+		font-size: 40px;
+	}
+	#c1b{
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 670px)
+{
+	.c1{
+		padding-left:3vh;
+		margin-left: 2vh;
+	}
+	#c1a{
+		margin-top: 3vh;
+		font-size: 25px;
+	}
+	#c1b{
+		font-size: 15px;
+	}
+}
+
+

@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  drupal:
+    image: "drupal"
+    ports:
+      - 8080:80
+    volumes:
+      - "drupal-vol:/var/www/html/sites"
+  postgres:
+    image: "postgres"
+    environment:
+      POSTGRES_PASSOWRD: "example"
+
+
+volumes:
+  drupal-vol:

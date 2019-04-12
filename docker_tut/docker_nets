@@ -1,0 +1,301 @@
+Script started on 2018-05-18 13:18:09+0530
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker con[K[K[Knetwork connect nginx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kk [K[K[K[K[K[K[K[K[K container run -d --nae [K[Kme nginx2 [K[K[K[K[K[K[Kwenh[K[Kbhost nginx
+6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network connect nginx webhost
+Error response from daemon: network nginx not found
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ dock[K[K[K[Kdocker ps 
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+6704596b0319        nginx               "nginx -g 'daemon of…"   30 seconds ago      Up 28 seconds       80/tcp              webhost
+0585f343f075        nginx               "nginx -g 'daemon of…"   4 minutes ago       Up 4 minutes        80/tcp              nginx
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network connect 67 05
+Error response from daemon: network 67 not found
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network connect 
+bridge      host        my_app_net  none        
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network connect my_app_net webhost
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker nert[K[Ktwork stats
+
+Usage:	docker network COMMAND
+
+Manage networks
+
+Options:
+
+
+Commands:
+  connect     Connect a container to a network
+  create      Create a network
+  disconnect  Disconnect a container from a network
+  inspect     Display detailed information on one or more networks
+  ls          List networks
+  prune       Remove all unused networks
+  rm          Remove one or more networks
+
+Run 'docker network COMMAND --help' for more information on a command.
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network pr[K[Kinspec [Kt my_app_net 
+[
+    {
+        "Name": "my_app_net",
+        "Id": "adb35ce05e7a59a4a737b1fbd492462da4a4e30f1c130d02d22856bf5e4ad645",
+        "Created": "2018-05-18T13:07:45.049924621+05:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "0585f343f075ad8d6276a874821813aa4665eaf6efc00e1483f32dc8f30336fc": {
+                "Name": "nginx",
+                "EndpointID": "cf280c10aaaee046df00fb44fb09ed296753f3cfc57e7ada1ffc1ad2e64de719",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea": {
+                "Name": "webhost",
+                "EndpointID": "acb0cf27a0b1bcb9c1dd2815a9a28b12876cdbe8396c6171ee1907dafe75ad0f",
+                "MacAddress": "02:42:ac:12:00:03",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ clear
+[3J[H[2J]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ cleardocker network inspect my_app_net stats[Kconnect my_app_net webhost67 05[Kps [Knetwork connect nginx webhostcontainer run -d --name webhost nginx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcat typescript lear[Kscript[1Pclearscript[1Pclearat typescript exit[Kdocker container run -d --name webhost nginx[8Pnetwork connect nginx webhostps [Knetwork connect nginx webhostps [Knetwork connect nginx webhostcontainer run -d --name webhost nginx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kdocker container run -d --name webhost nginx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcat typescript lear[Kscript[1Pcleardocker network lsinspect bridgels[Kclear[Krm -rf hagga.txt [3Pcat[C[C[C[C[C[C[C[C[C[C[C[3@rm -rf[C[C[C[C[C[C[C[C[C[C[Cclear[Kdocker network lsinspect bridgels[Kclear[Kscript[1Pclearat typescript exit[Kdocker container run -d --name webhost nginx[8Pnetwork connect nginx webhostcontainer run -d --name webhost nginx[8Pnetwork connect nginx webhostps [Knetwork connect nginx webhostcontainer run -d --name webhost nginx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kcat typescript lear[Kscript[1Pcleardocker network lsinspect bridgels[Kclear[Krm -rf hagga.txt [3Pcat[C[C[C[C[C[C[C[C[C[C[Cfiglet Authgen > hagga.txtclear[K[3P$$figlet yummyfiglet hello world$$[Kclearfiglet Authgen > hagga.txt[12Pcat hagga.txt [3@rm -rf[C[C[C[C[C[C[C[C[C[C[Cclear[Kdocker network lsinspect bridgels[Kinspect bridgels[Kinspect bridgels[Kclear[Kscript[1Pclearat typescript exit[Kdocker container run -d --name webhost nginx[8Pnetwork connect nginx webhostps [Knetwork connect 67 05my_app_net webhoststats[Kinspect my_app_net clear[K[Koc[K[Kdocker network 
+connect     create      disconnect  inspect     ls          prune       rm          
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network 
+connect     create      disconnect  inspect     ls          prune       rm          
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker network docker[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K container isn[K[Knspect webhost 
+[
+    {
+        "Id": "6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea",
+        "Created": "2018-05-18T07:50:36.932774063Z",
+        "Path": "nginx",
+        "Args": [
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 16317,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2018-05-18T07:50:37.45296238Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:ae513a47849c895a155ddfb868d6ba247f60240ec8495482eca74c4a2c13a881",
+        "ResolvConfPath": "/var/lib/docker/containers/6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea/hostname",
+        "HostsPath": "/var/lib/docker/containers/6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea/hosts",
+        "LogPath": "/var/lib/docker/containers/6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea/6704596b03193d88e67f848cf5e5373f2beb817b15ae04e831440d38ff801eea-json.log",
+        "Name": "/webhost",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/cfaf8862c89611bc0578b684ec0ad8512a72cd512872a0e7a0cb1b22a089ac30-init/diff:/var/lib/docker/overlay2/a07d140ad06d123e48fcb21d00b231f20e03f5d54e3d22c7b409d8f626a513ab/diff:/var/lib/docker/overlay2/eae7a7aa8a567e3bbcc3073c3f78d97dd6b5b455ed47f0647160748b9fdbcab7/diff:/var/lib/docker/overlay2/e3d1a244181e7e730eb0f6e5a807470ac90d4521be4d13a95b3ca0d4380bfaec/diff",
+                "MergedDir": "/var/lib/docker/overlay2/cfaf8862c89611bc0578b684ec0ad8512a72cd512872a0e7a0cb1b22a089ac30/merged",
+                "UpperDir": "/var/lib/docker/overlay2/cfaf8862c89611bc0578b684ec0ad8512a72cd512872a0e7a0cb1b22a089ac30/diff",
+                "WorkDir": "/var/lib/docker/overlay2/cfaf8862c89611bc0578b684ec0ad8512a72cd512872a0e7a0cb1b22a089ac30/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "6704596b0319",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.13.12-1~stretch",
+                "NJS_VERSION=1.13.12.0.2.0-1~stretch"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "ArgsEscaped": true,
+            "Image": "nginx",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGTERM"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "36d584a47eadb1097d6e14aab7d88846e92d135cbb74fbcadc4f25783de1b9eb",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "80/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/36d584a47ead",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "450c127f3db92e87ea008a1fb750919b82fbb0e8cae390efcd641a38d5d209bc",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "54aede5405fff10a14bf527a3825f4f24e1dc6c9598e66fcebacde4795bce0b6",
+                    "EndpointID": "450c127f3db92e87ea008a1fb750919b82fbb0e8cae390efcd641a38d5d209bc",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                },
+                "my_app_net": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "6704596b0319"
+                    ],
+                    "NetworkID": "adb35ce05e7a59a4a737b1fbd492462da4a4e30f1c130d02d22856bf5e4ad645",
+                    "EndpointID": "acb0cf27a0b1bcb9c1dd2815a9a28b12876cdbe8396c6171ee1907dafe75ad0f",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ docker container inspect webhost | grep brig[Kdge
+                "[01;31m[Kbridge[m[K": {
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ dockr[Ker network disconnect my_app_net webhost 
+]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ clear
+[3J[H[2J]0;angad@JAGERMAESTER: ~/Desktop/docker_tut[01;32mangad@JAGERMAESTER[00m:[01;34m~/Desktop/docker_tut[00m$ exit[K[K[Kxit
+exit
+
+Script done on 2018-05-18 13:25:27+0530

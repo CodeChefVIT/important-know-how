@@ -1,0 +1,39 @@
+{
+  "name": "express-auth-generator",
+  "version": "1.0.0",
+  "description": "An express project generator for basic authentication as well as Oauth, with built in mongoDB connectivity",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angadsharma1016/express-auth-generator.git"
+  },
+  "keywords": [
+    "express-auth-generator",
+    "auth-generator",
+    "generator",
+    "project",
+    "auth-project"
+  ],
+  "author": "Angad Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angadsharma1016/express-auth-generator/issues"
+  },
+  "homepage": "https://github.com/angadsharma1016/express-auth-generator#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.4",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "bcrypt": "^2.0.0"
+  }
+}

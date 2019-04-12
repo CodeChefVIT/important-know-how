@@ -1,0 +1,10 @@
+syntax = "proto3";
+package api;
+
+message PingMessage {
+    string greeting = 1;
+}
+
+service ping {
+    rpc SayHello(PingMessage) returns (PingMessage) {} ;
+}

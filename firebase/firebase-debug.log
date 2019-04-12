@@ -1,0 +1,47 @@
+[debug] [2018-03-31T01:24:38.305Z] ----------------------------------------------------------------------
+[debug] [2018-03-31T01:24:38.308Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-31T01:24:38.308Z] CLI Version:   3.17.7
+[debug] [2018-03-31T01:24:38.308Z] Platform:      linux
+[debug] [2018-03-31T01:24:38.308Z] Node Version:  v9.9.0
+[debug] [2018-03-31T01:24:38.308Z] Time:          Sat Mar 31 2018 06:54:38 GMT+0530 (IST)
+[debug] [2018-03-31T01:24:38.309Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-31T01:24:38.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-31T01:24:38.318Z] > authorizing via signed-in user
+[debug] [2018-03-31T01:24:38.320Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-31T01:24:38.320Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/RwJPmen3u8PcI9NNfyei5zr_eHNwKlL81hjeBlMd-P89URuNwvb36rbiRezo18UK',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Mar 31 2018 06:54:38 GMT+0530 (IST)
+[debug] [2018-03-31T01:24:38.580Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-31T01:24:38.718Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/resident-upheaval  
+  
+ Sat Mar 31 2018 06:54:38 GMT+0530 (IST)
+[debug] [2018-03-31T01:24:42.916Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-31T01:24:42.917Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/resident-upheaval/tokens  
+  
+ Sat Mar 31 2018 06:54:42 GMT+0530 (IST)
+[debug] [2018-03-31T01:24:47.454Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-31T01:24:47.455Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/resident-upheaval  
+  
+ Sat Mar 31 2018 06:54:47 GMT+0530 (IST)
+[debug] [2018-03-31T01:25:08.322Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/angad/Desktop/firebase'...
+[info] 
+[debug] [2018-03-31T01:25:08.334Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/376130123479/clients/_:getWebAppConfig  
+  
+ Sat Mar 31 2018 06:55:08 GMT+0530 (IST)
+[debug] [2018-03-31T01:25:09.548Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-31T01:25:09.569Z] TypeError: Cannot read property 'public' of undefined
+    at Server.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/serve/hosting.js:34:18)
+    at Object.onceWrapper (events.js:272:13)
+    at Server.emit (events.js:180:13)
+    at Server.emit (domain.js:421:20)
+    at emitListeningNT (net.js:1372:10)
+    at process._tickCallback (internal/process/next_tick.js:114:19)
+[error] 
+[error] Error: An unexpected error has occurred.

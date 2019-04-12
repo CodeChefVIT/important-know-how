@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="header">welcome</h1>
+    </center>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHQQEdzplZKFmI1FSa-4QxrD9rw2ClqUo",
+    authDomain: "resident-upheaval.firebaseapp.com",
+    databaseURL: "https://resident-upheaval.firebaseio.com",
+    projectId: "resident-upheaval",
+    storageBucket: "resident-upheaval.appspot.com",
+    messagingSenderId: "376130123479"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+</script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
