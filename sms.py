@@ -9,8 +9,8 @@ message = raw_input("Enter text: ")
 number = raw_input("Enter number: ")
 
 if __name__ == "__main__":    
-    username = "7905438879"
-    passwd = "codeyeah01"
+    username = ""
+    passwd = ""
 
     message = "+".join(message.split(' '))
 
