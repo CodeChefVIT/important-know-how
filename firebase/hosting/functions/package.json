@@ -14,7 +14,7 @@
     "express": "^4.16.3",
     "firebase-admin": "~9.2.0",
     "firebase-functions": "^3.6.2",
-    "snyk": "^1.424.4"
+    "snyk": "^1.425.4"
   },
   "private": true,
   "snyk": true
